@@ -99,4 +99,4 @@ check_root
 write_script
 add_systemd
 echo "[$SCRIPT_NAME v$SCRIPT_VERSION]: Done!"
-exit 0
+#exit 0
