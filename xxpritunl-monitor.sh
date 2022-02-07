@@ -45,6 +45,7 @@ RemainAfterExit=yes
 User=root
 ExecStart=/bin/bash ${FIX_SCRIPT_LOCATION}
 RestartSec=${RESTART_TIME}
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
