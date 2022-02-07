@@ -40,6 +40,8 @@ function add_systemd () {
 Description=Dirty fix for pritunl interpersonal problems.
 
 [Service]
+Type=oneshot
+RemainAfterExit=yes
 User=root
 ExecStart=/bin/bash ${FIX_SCRIPT_LOCATION}
 RestartSec=${RESTART_TIME}
